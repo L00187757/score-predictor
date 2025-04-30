@@ -1,14 +1,11 @@
-<h1> Results of Prediction </h1>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
 <body>
-    <h2>Prediction Result</h2>
-
-    {% if prediction %}
-        <p>{{ prediction }}</p>
-    {% else %}
-        <p>Error: No prediction received.</p>
-    {% endif %}
-
-    <a href="/">Go back</a>
+    <h2>Predicted Weight</h2>
+    <p>For a height of {{ height }} inches, the predicted weight is {{ weight }} lbs.</p>
+    <a href="/">Try Again</a>
 </body>
-
+</html>
