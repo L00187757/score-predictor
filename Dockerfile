@@ -1,1 +1,9 @@
-#Please see README file for instructions.
+
+FROM python:3.10
+WORKDIR  /opt/flaskweight
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+EXPOSE 5000
+CMD ["python", "flaskapp.py"]
+
